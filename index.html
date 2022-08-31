@@ -393,10 +393,25 @@
 			
 			
         </div>		
+		<a class="topbtn" href="#" onclick="fun()"><i class="fa fa-arrow-up center" style="font-size:22px;color:white;"></i></a>
+
         <div class="footer-copyright text-center py-3">© 2022 All rights reserved. Created by Moteen Nadeem Khan
             
         </div>
     </footer>
+ 
+ <script>
+var topbutton=document.querySelector(".topbtn");
+topbutton.style.display="none";
+document.querySelector('body').onscroll=function(){
+if(window.scrollY>150){
+topbutton.style.display="block";
+}
+else{
+topbutton.style.display="none";
+}
+}
+</script>
  
 	
 </body>
